@@ -21,12 +21,29 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent1-color));
+    min-height: 100vh;
      }
   
 header, main,footer {
     width: 840px;
     margin: 0 auto;
   }
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: var(--body-font);
+}
+footer a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: var(--accent1-color);
+}
   
   h1, h2 {
     font-family: var(--heading-font);
@@ -40,6 +57,23 @@ header, main,footer {
   .socialmedia a  {
     text-decoration: none;
  }
+.socialmedia a img {
+    width: 30px; /*Adjust the size as needed*/
+    height: auto; /*Maintain aspect ratio*/
+}
+.socialmedia a {
+    margin-right: 10px; /* Add spacing between icons */
+}
+.socialmedia a img {
+    width: 30px; /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socialmedia a img:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    filter: brightness(1.2); /* Brighten the icon */
+}
  .hero {
   position: relative;
  }

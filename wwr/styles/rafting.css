@@ -70,6 +70,19 @@ header, nav, ul, li, a{
     font-weight: bold;
 }
 
+.history {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--spacing-medium);
+  align-items: center;
+  padding: var(--spacing-medium);
+}
+.history img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .card{
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
@@ -167,6 +180,12 @@ adventure-gallery {
   height: auto;
   border-radius: 8px;
 }
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-size: var(--font-size-small);
+  color: #555;
+}
+
 
  
 

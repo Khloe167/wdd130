@@ -49,16 +49,16 @@ header {
 }
 
 header img {
-  height: 30px;
+  height: 60px;
 }
 
-/* nav ul {
-  /* display: flex;
+nav ul {
+  display: flex;
   justify-content: flex-end;
   gap: 2rem;
   list-style: none;
-  margin: 0; */
-*/
+  margin: 0;
+}
 
 nav a {
   text-decoration: none;
@@ -98,10 +98,10 @@ nav a:hover {
 }
 
 .adventure-gallery {
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: var(--spacing-medium); */
+  gap: var(--spacing-medium);
   padding: var(--spacing-large);
   max-width: 960px;
   margin: 0 auto;
@@ -109,10 +109,10 @@ nav a:hover {
   border-radius: var(--border-radius);
 }
 
-/* .adventure-gallery figure {
+.adventure-gallery figure {
   flex: 1 1 calc(20% - var(--spacing-medium));
   text-align: center;
-} */
+}
 
 .adventure-gallery img {
   width: 100%;

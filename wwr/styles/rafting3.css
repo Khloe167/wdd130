@@ -25,8 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Criterion 2: Header uses CSS Grid layout and is uniform in design. */
 .header {
-    display: grid;
+    display: flex;
     grid-template-columns: auto 1fr;
+    justify-content: space-between; /* pushes nav to the right */
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--primary-color);
@@ -247,4 +248,95 @@ main {
 .social-links img {
     width: 30px; /* Adjust the width */
     height: auto; /* Keep the height proportional */
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+:root {
+  --primary-color: #1b4965;
+  --secondary-color: #cae9ff;
+  --accent1-color: #5fa8d3;
+  --accent2-color: #62b6cb;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/* pushes nav to the right */
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--accent2-color);
+}
+
+.banner {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  font-family: var(--heading-font);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 20px;
+  gap: 20px;
+}
+
+.contact-box {
+  flex: 1 1 45%;
+  min-height: 200px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
 }

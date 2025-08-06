@@ -120,8 +120,7 @@ main {
     height: auto;
     margin-left: 1rem;
     border-radius: 5px;
-    -webkit-shape-outside: circle(50%);
-    shape-outside: circle(50%);
+    shape-outside: circle(50% at 50% 50%);
     object-fit: cover;
     flex-shrink: 0;
 }

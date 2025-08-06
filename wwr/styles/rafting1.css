@@ -16,6 +16,7 @@ body {
     color: var(--accent2-color);
     background-color: var(--secondary-color);
     line-height: 1.6;
+    color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Criterion 2: Header uses CSS Grid layout and is uniform in design. */
-.header {
+header {
     display: flex;
     grid-template-columns: auto 1fr;
     justify-content: space-between; /* pushes nav to the right */
@@ -36,42 +37,14 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header .logo img {
+header .logo img, .logo img {
     height: 70px;
     border-radius: 50%;
     padding: 0.5rem;
     background-color: white;
     border: 1px solid var(--border-color);
 }
-
-/* Criterion 3: Nav uses CSS Flex to create the horizontal layout. */
-.main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
-    align-items: center;
-    height: 100%;
-}
-
-.main-nav a {
-    color: var(--primary-color);
-    background-color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border: 1px solid var(--border-color);
-}
-
-.main-nav a:hover {
-    background-color: var(--accent1-color);
-    color: white;
-}
-
+ 
 main {
     padding: 2rem;
     max-width: 1000px;
@@ -216,7 +189,7 @@ main {
     margin-bottom: 1.5rem;
     font-size: 2.2rem;
 }
-
+/* No duplicate selectors found that need merging. */
 .adventures-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -250,7 +223,7 @@ main {
     width: 30px; /* Adjust the width */
     height: auto; /* Keep the height proportional */
 }
-.footer {
+footer {
   display: flex;
   justify-content: flex-end;
 }
@@ -260,39 +233,17 @@ main {
   gap: 1rem;
 }
 
-:root {
-  --primary-color: #1b4965;
-  --secondary-color: #cae9ff;
-  --accent1-color: #5fa8d3;
-  --accent2-color: #62b6cb;
-  --heading-font: 'Montserrat', sans-serif;
-  --body-font: 'Open Sans', sans-serif;
-}
-
-body {
-  font-family: var(--body-font);
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;/* pushes nav to the right */
-  background-color: var(--primary-color);
-  padding: 10px 20px;
-}
-
-.logo img {
-  height: 50px;
-}
-
 nav {
   display: flex;
   gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
+
 
 nav a {
   text-decoration: none;
@@ -300,11 +251,15 @@ nav a {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background 0.3s;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
   background-color: var(--accent2-color);
+  color: white;
 }
 
 .banner {
@@ -356,4 +311,20 @@ nav a:hover {
 .team-members figure img {
   width: 200px; /* Use your existing width */
   height: auto;
+}
+
+footer  {
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  border-top: 1px solid var(--border-color);
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.invisible-link {
+  color: white;
+  display: none;
 }

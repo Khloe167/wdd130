@@ -345,7 +345,7 @@ footer  {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  background: rgba(7, 45, 68, 0.7);
+  background: #1b4965; /* Dark Blue */
   padding: 2rem 3rem;
   border-radius: 10px;
   text-align: center;

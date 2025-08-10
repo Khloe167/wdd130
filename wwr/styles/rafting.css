@@ -119,18 +119,10 @@ main {
     width: 100px;
     height: auto;
     margin-left: 1rem;
-    border-radius: 5px;
+    border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    /* Visual clipping for browsers without shape-outside */
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
-
-  /* Shape wrapping — wrapped in a hack so validators ignore it */
-  /* stylelint-disable-next-line property-no-unknown */
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  /* stylelint-disable-next-line property-no-unknown */
-  shape-outside: circle(50% at 50% 50%);
+  
 }
 
 

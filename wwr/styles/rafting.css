@@ -226,6 +226,7 @@ main {
 footer {
   display: flex;
   justify-content: flex-end;
+  color: #083344; /* Dark blue text */
 }
 
 .social-links {
@@ -323,6 +324,7 @@ footer  {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
+  color: #083344; /* Dark blue text */
 }
 .invisible-link {
   color: white;
@@ -343,7 +345,7 @@ footer  {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  background: rgba(27, 73, 101, 0.7);
+  background: rgba(7, 45, 68, 0.7);
   padding: 2rem 3rem;
   border-radius: 10px;
   text-align: center;
@@ -403,7 +405,7 @@ footer  {
             font-size: 1rem;
         }
         .newsletter-form button {
-            background:  #21839B; /* Darker teal, passes AA */
+            background:  #01495b; /* Darker teal, passes AA */
             color: #fff;
             border: none;
             padding: 0.7rem 1.5rem;
@@ -479,7 +481,7 @@ main {
 
 .cta {
   text-align: center;
-  background-color: var(--accent1-color);
+  background-color:  var(--accent1-color);
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 8px;
@@ -496,8 +498,8 @@ main {
 }
 
 .cta .button {
-  background-color: #225E75; /* Darker blue */
-  color: white;
+  background-color: #4F7F94; /* current or slightly lighter blue */
+  color: #ffff;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
@@ -587,6 +589,6 @@ footer {
 }
 
 footer a {
-  color:  #083344; /* Dark blue */
+  color:  #083344; /* Dark blue text */
   text-decoration: underline;
 }
